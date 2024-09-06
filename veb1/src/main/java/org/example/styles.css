@@ -1,0 +1,90 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-color: #DAAD86;
+}
+
+header {
+    font-family: "Nerko One", cursive;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 50px;
+    background-color: #659DBD;
+    width: 100%;
+}
+
+.head-of-laba {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 0 20px;
+}
+
+.head-of-laba p:first-child {
+    text-align: left;
+}
+
+.head-of-laba p:second-child {
+    text-align: center;
+}
+
+.head-of-laba p:last-child {
+    text-align: right;
+}
+
+.head-group {
+    margin-right: 100px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.input-group {
+    margin-bottom: 30px;
+}
+
+#dataForm {
+    display: grid;
+}
+
+.form-group {
+    margin-left: 40px;
+
+}
+
+.button-wrapper {
+    padding: 10px;
+}
+
+
+input[type=submit] {
+    width: 200px;
+    height: 80px;
+    margin-left:40px;
+    font-size: 30px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+input[type=submit]:hover {
+    color: red;
+    border-color: red;
+}
+
+#dataForm label {
+    color: #950740;
+}
+
+#dataForm input[type=radio] + label {
+    color: #950740;
+}
+
+.chart img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 60px;
+}
