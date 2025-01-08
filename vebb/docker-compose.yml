@@ -1,0 +1,21 @@
+networks:
+  itmo:
+
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile-b
+    ports:
+      - "8090:8090"
+    networks:
+      - itmo
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile-f
+    ports:
+      - "8080:8080"
+    networks:
+      - itmo

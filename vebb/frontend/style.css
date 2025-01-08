@@ -1,0 +1,142 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-color: #DAAD86;
+}
+
+header {
+    font-family: "Nerko One", cursive;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 50px;
+    background-color: #659DBD;
+    width: 100%;
+}
+
+.variant-img, .fio-img {
+    height: 50px;
+    width: auto;
+}
+
+.variant-img {
+    margin-right: 10px;
+}
+
+.fio-img {
+    margin-left: 10px;
+}
+
+.head-of-laba {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.head-of-laba p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head-of-laba p:first-child {
+    text-align: left;
+}
+
+.head-of-laba p:nth-child(2) {
+    text-align: center;
+}
+
+.head-of-laba p:last-child {
+    text-align: right;
+}
+
+.head-group {
+    margin-right: 100px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.input-group {
+    margin-bottom: 30px;
+}
+
+#dataForm {
+    display: grid;
+}
+
+.form-group {
+    margin-left: 40px;
+
+}
+
+.button-wrapper {
+    padding: 10px;
+}
+
+
+input[type=submit] {
+    width: 200px;
+    height: 80px;
+    margin-left:40px;
+    font-size: 30px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+input[type=submit]:hover {
+    color: red;
+    border-color: red;
+}
+
+#dataForm label {
+    color: #950740;
+}
+
+#dataForm input[type=radio] + label {
+    color: #950740;
+}
+
+.chart img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 60px;
+}
+
+#grafik {
+    background-color: white;
+}
+
+.results {
+    overflow: auto;
+    height: 400px;
+    width: 100%;
+    margin: 0 50px;
+}
+
+#results-table {
+    text-align: center;
+    border-collapse: separate;
+    width: 100%;
+}
+
+#results-table th, td {
+    padding: 20px;
+    border: 3px solid #0000FF;
+    border-radius: 10px;
+}
+
+#results-table tr {
+    background-color: #659DBD;
+}
+
+
+.hidden {
+    display: none;
+}

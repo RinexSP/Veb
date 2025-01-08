@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>LabaPoVebu</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="head-of-laba">
+        <p class="head-fio">Спасов Владимир Алексеевич <img src="img/itmoVT.png" class="fio-img"></p>
+        <p class="head-group">Группа: P3210</p>
+        <p class="head-variant"><img src="img/itmoVT.png" class="variant-img"> Вариант: 488783</p>
+    </div>
+</header>
+
+<div class="main-content">
+    <form id="dataForm">
+        <div class="form-group">
+            <div class="input-group">
+                <label for="x-coord-input">X:</label>
+                <input type="text" id="x-coord-input" name="x-coord-input" required min="-3" max="3" step="0.1">
+            </div>
+            <div class="input-group">
+                <label for="y-coord-input">Y:</label>
+                <input type="text" id="y-coord-input" name="y-coord-input" required min="-3" max="5" step="0.1">
+            </div>
+            <div class="input-group">
+                <label for="r1">R:</label>
+                <div class="radio-buttons">
+                    <input type="radio" id="r1" name="r" value="1" required>
+                    <label for="r1">1</label>
+                    <input type="radio" id="r1-5" name="r" value="1.5">
+                    <label for="r1-5">1.5</label>
+                    <input type="radio" id="r2" name="r" value="2">
+                    <label for="r2">2</label>
+                    <input type="radio" id="r2-5" name="r" value="2.5">
+                    <label for="r2-5">2.5</label>
+                    <input type="radio" id="r3" name="r" value="3">
+                    <label for="r3">3</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-wrapper">
+            <input id="js-submit-button" type="submit" value="Отправить">
+        </div>
+    </form>
+
+    <div class="results">
+        <table id="results-table">
+            <thead>
+            <tr>
+                <th>X</th>
+                <th>Y</th>
+                <th>R</th>
+                <th>Ответ</th>
+                <th>Текущее время</th>
+                <th>Время работы скрипта</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="chart-container">
+        <canvas id="grafik" width="500" height="500" style="border:1px solid #000;"></canvas>
+    </div>
+</div>
+
+<div id="loader" class="hidden">Загрузка...</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

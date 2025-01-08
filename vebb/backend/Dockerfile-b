@@ -1,0 +1,6 @@
+# Dockerfile-b
+FROM openjdk:17-jdk
+WORKDIR /app
+COPY ./vebb.jar /app/myapp.jar
+EXPOSE 8090
+CMD ["java", "-DFCGI_PORT=8090", "-jar", "myapp.jar"]
